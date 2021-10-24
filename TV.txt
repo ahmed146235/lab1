@@ -1,0 +1,51 @@
+package assignment_1;
+public class TV 
+{
+    private static int channel;
+    private static int volumLevel;
+    private boolean on=true;
+    
+    public TV()
+    {
+        channel=1;
+        volumLevel=1;
+    }
+    public void trunOn()
+    {
+        on=true;
+    }
+    public void trunOff()
+    {
+        on=false;
+    }
+    public void setChannel(int newChannel)
+    {
+        if(newChannel<=120)
+                channel=newChannel;
+        else
+            System.out.println("NO CHANNEL!!!!!!!!");
+    }
+    public void setVolum(int newVolumeLevel)
+    {
+        if(newVolumeLevel<=7)
+                volumLevel=newVolumeLevel;
+        else
+                volumLevel=7;
+    }
+    public static void ChannelUp()
+    {
+        channel++;
+    }
+    public static void ChannelDown()
+    {
+        channel--;
+    }
+    public static void VolumeUp()
+    {
+        volumLevel++;
+    }
+     public static void VolumeDown()
+    {
+        volumLevel--;
+    }
+}
