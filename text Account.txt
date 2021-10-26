@@ -1,0 +1,14 @@
+
+package assignment__1;
+public class Assignment__1 
+{
+
+    public static void main(String[] args)
+    {
+     ACCOUNT acc1=new ACCOUNT(1122,20000);
+     acc1.withdraw(2500.0);
+     acc1.deposit(3000.0);
+     acc1.display();
+    }
+    
+}
